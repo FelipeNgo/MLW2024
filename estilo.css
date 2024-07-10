@@ -1,4 +1,6 @@
-#tela{background-color: black;}
+body {
+    background-color: gray;
+}
 
 .titulo {text-align: center;
     color: white;
@@ -12,5 +14,29 @@ ol {text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif; }
 
-a {color: white;}
+a {color: red;
+   text-decoration: underline black;
+   text-shadow: 5px 5px 10px black ;
+  }
 
+.letras {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+       margin-left: 0%;
+       width: 100%;
+    }
+}
+
+.letras h1,h2{
+    text-decoration: underline rgb(0, 0, 0) double;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
